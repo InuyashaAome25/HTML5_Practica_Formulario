@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asignacion 2.3</title>
+    <link rel="stylesheet" href="../CSS/Plantilla.css">
+</head>
+<body>
+    <header> Practicando Confección de Formularios </header>
+    <nav>
+
+    </nav>
+    <main>
+        <form action="../JSP/proceso.jsp">
+            <h2>Datos Personales</h2>
+            Usuario:
+            <input type="text"
+                   name="name"
+                   size="20"
+                   maxlength="20"
+                   autofocus
+                   requerided
+                   autocomplete="on"
+                   placeholder="Inserte su nombre">
+            <br>
+            Apellido:
+            <input type="text"
+                   name="lastname"
+                   size="20"
+                   maxlength="20"
+                   autofocus
+                   requerided
+                   autocomplete="on"
+                   placeholder="Inserte su apellido"/>
+            <br>
+            Fecha de Nacimento:
+            <input
+                    type="date"
+                    value="2023-01-01"
+                    name="nacimiento"
+                    title="Su fecha de nacimiento">
+            <br>
+            <h4>Sexo:</h4>
+            <input
+                    type="radio"
+                    name="sexo"
+                    value="mujer"
+                    checked> Mujer
+            <input
+                    type="radio"
+                    name="sexo"
+                    value="hombre"
+                    >Hombre
+            <br>
+            <h2>Areás de Interés</h2>
+            <input type="checkbox" name="areas" value="arquitectura" checked>Arquitectura <br>
+            <input type="checkbox" name="areas" value="diseño" >Diseño <br>
+            <input type="checkbox" name="areas" value="medicina" >Medicina <br>
+            <input type="checkbox" name="areas" value="deporte" >Deporte <br>
+            <br>
+            <input type=reset value=Restablecer>
+            <input type="submit" value="registrar">
+        </form>
+    </main>
+    <footer>
+        <p>
+            Cesar Castillo 8-976-234
+            Michael Perez 8-1007-1782
+            Victor Rodriguez 9-761-2415
+        </p>
+    </footer>
+</body>
+</html>
